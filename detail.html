@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <img src="" id="image" alt="">
+    <h2 id="heading"></h2>
+    <p id="paragraph"></p>
+</head>
+<body>
+   <script>
+    var img = localStorage.getItem("imglink")
+    var text = localStorage.getItem("imgtext")
+    var desc =  localStorage.getItem("imgdesc")
+    var images = document.getElementById("image")
+    var headings = document.getElementById("heading")
+    var paragraphs = document.getElementById("paragraph")
+    images.src = img
+    headings.innerHTML = text
+    paragraphs.innerHTML=desc
+   </script> 
+</body>
+</html>
